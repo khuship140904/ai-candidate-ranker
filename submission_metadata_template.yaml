@@ -1,0 +1,37 @@
+team_name: "Khushi_Ranks"
+
+primary_contact:
+  name: "Khushi Patel"
+  email: "khushipatel140904@gmail.com"
+  phone: "+91-9109264811"
+
+team_members:
+  - name: "Khushi Patel"
+    email: "khushipatel140904@gmail.com"
+    role: "Team Lead"
+
+github_repo: "https://github.com/khuship140904/ai-candidate-ranker"
+
+sandbox_link: "https://huggingface.co/spaces/Khushi1409/ai-candidate-ranker"
+
+reproduce_command: "python rank.py"
+
+ai_tools_used:
+  - "Claude"
+
+ai_usage_summary: |
+  Used Claude for architecture discussion.
+  No candidate data was fed to any external LLM during ranking.
+
+methodology_summary: |
+  Rule-based ranker with five scoring components: job title match (40pts),
+  career history keyword analysis (25pts), years of experience (15pts),
+  location match (10pts), and behavioral signals (10pts). Title match is
+  the decisive signal to avoid keyword-stuffer traps. Runtime is under
+  2 minutes for 100K candidates on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  reproduction_tested: true
